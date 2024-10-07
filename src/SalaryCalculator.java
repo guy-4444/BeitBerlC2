@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SalaryCalculator {
 
-    public static final double AVERAGE_SALARY_FOR_SOCIAL_SECURITY = 12_536;
+    private static final double AVERAGE_SALARY_FOR_SOCIAL_SECURITY = 12_536;
 
     public static void start() {
         System.out.println("◍ ◍ ◍ ◍ ◍ Salary Calculator App ◍ ◍ ◍ ◍ ◍");
@@ -35,7 +35,7 @@ public class SalaryCalculator {
 
     }
 
-    public static double calculateSocialSecurity(double gross, boolean under18) {
+    private static double calculateSocialSecurity(double gross, boolean under18) {
         // https://www.kolzchut.org.il/he/%D7%93%D7%9E%D7%99_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A9%D7%9B%D7%99%D7%A8
         final double MAX_FOR_SOCIAL_SECURITY = 49_030;
         final double AVG_60 = AVERAGE_SALARY_FOR_SOCIAL_SECURITY * 0.60;
@@ -66,7 +66,7 @@ public class SalaryCalculator {
         return tax;
     }
 
-    public static double calculateHealthTax(double gross, boolean under18) {
+    private static double calculateHealthTax(double gross, boolean under18) {
         // https://www.kolzchut.org.il/he/%D7%93%D7%9E%D7%99_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9C%D7%90%D7%95%D7%9E%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A9%D7%9B%D7%99%D7%A8
         final double MAX_FOR_SOCIAL_SECURITY = 49_030;
         final double AVG_60 = AVERAGE_SALARY_FOR_SOCIAL_SECURITY * 0.60;
@@ -97,7 +97,7 @@ public class SalaryCalculator {
         return tax;
     }
 
-    public static double calculateIncomeTax(double gross) {
+    private static double calculateIncomeTax(double gross) {
         double[] steps = new double[]{0, 7_010, 10_060, 16_150, 22_440, 46_690};
         double[] prcnt = new double[]{10, 14, 20, 31, 35, 47};
         double tax = 0.0;
@@ -114,12 +114,12 @@ public class SalaryCalculator {
         return tax;
     }
 
-    public static double calculateFund(double gross) {
+    private static double calculateFund(double gross) {
 
         return 0;
     }
 
-    public static double calculatePension(double gross) {
+    private static double calculatePension(double gross) {
 
         return 0;
     }
