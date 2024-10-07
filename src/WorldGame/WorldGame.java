@@ -1,43 +1,44 @@
 package WorldGame;
 
-import java.util.Scanner;
-
 public class WorldGame {
 
-    private static String[] countries = new String[] {"A", "B", "C"};
+    private static Country[] countries = new Country[3];
 
     public static void start() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("◍ ◍ ◍ ◍ ◍ World Game App ◍ ◍ ◍ ◍ ◍");
 
 
-        while (true) {
-            System.out.println("Enter Country: (-- to close)");
+        Country c0 = new Country();
+        c0.name = "Israel";
+        c0.pop = 10_000_000;
 
-            String input = scanner.nextLine();
-            if (input.equals("--")) {
-                break;
-            }
-            if (input.length() < 2) {
-                continue;
-            }
+        Country c1 = new Country();
+        c1.name = "USA";
+        c1.pop = 300_000_000;
 
-            // todo: insert logic.
-            addCountryToArray(input);
-            System.out.println("Input: " + input);
-        }
+        countries[0] = c0;
+        countries[1] = c1;
 
-        System.out.println("\n\nYour countries array: ");
-        for (int i = 0; i < countries.length; i++) {
-            System.out.println((i + 1) + ". " + countries[i]);
-        }
+        inputData();
 
-        System.out.println("Program end");
-    }
-
-    private static void addCountryToArray(String name) {
+        printData();
 
     }
 
+    private static void inputData() {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter country name:");
+
+
+            System.out.println("Enter country population:");
+
+
+
+        }
+    }
+
+
+    private static void printData() {
+
+    }
 
 }

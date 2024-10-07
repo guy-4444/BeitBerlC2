@@ -1,10 +1,10 @@
-import WorldGame.WorldGame;
+import WorldGame.InputApp;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        WorldGame.start();
+        InputApp.start();
 
 
 
