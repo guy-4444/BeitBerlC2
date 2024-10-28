@@ -1,44 +1,49 @@
 package WorldGame;
 
+import java.util.Scanner;
+
 public class WorldGame {
 
-    private static Country[] countries = new Country[3];
+    private static Country[] countries;
 
     public static void start() {
+        System.out.println("◍ ◍ ◍ ◍ ◍ Welcome to World Game App ◍ ◍ ◍ ◍ ◍");
+
+        countries = DataManager.generateCountriesData();
+
+        countries[0].setFavorite(true);
+        printCountries(countries);
 
 
-        Country c0 = new Country();
-        c0.name = "Israel";
-        c0.pop = 10_000_000;
-
-        Country c1 = new Country();
-        c1.name = "USA";
-        c1.pop = 300_000_000;
-
-        countries[0] = c0;
-        countries[1] = c1;
-
-        inputData();
-
-        printData();
-
+        //startNewGame();
     }
 
-    private static void inputData() {
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Enter country name:");
+    private static void startNewGame() {
+        System.out.println("◍ ◍ ◍ ◍ ◍ New Game Started ◍ ◍ ◍ ◍ ◍");
 
+        Scanner scanner = new Scanner(System.in);
+        int score = 0;
 
-            System.out.println("Enter country population:");
+        for (int i = 0; i < countries.length; i++) {
+            System.out.println("1: is " + countries[i].getName() + " is island? (enter 1 true, 0 false)");
+            int answer = scanner.nextInt();
 
+            if ((answer == 1 && countries[i].isIsland()) || (answer == 0 && !countries[i].isIsland())) {
+                System.out.println("good answer");
+                score++;
+            } else {
+                System.out.println("bad answer");
+            }
+        }
 
+        System.out.println("Game over. your score: " + score + "/" + countries.length);
+    }
 
+    public static void printCountries(Country[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(i + 1 + ". " + arr[i]);
         }
     }
 
-
-    private static void printData() {
-
-    }
 
 }
