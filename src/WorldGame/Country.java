@@ -3,6 +3,7 @@ package WorldGame;
 public class Country {
 
     private String name;
+    private String continent;
     private long pop;
     private boolean isIsland = false;
     private boolean isFavorite = false;
@@ -24,7 +25,7 @@ public class Country {
         this.isFavorite = isFavorite;
     }
 
-    public Country(String name, long pop, boolean isIsland) {
+    public Country(String name, String continent, long pop, boolean isIsland) {
         this.name = name;
         this.pop = pop;
         this.isIsland = isIsland;

@@ -4,6 +4,16 @@ import java.util.Scanner;
 
 public class WorldGame {
 
+
+    private static String[] CONTINENTS = new String[] {
+            "Africa",
+            "Antarctica",
+            "Asia",
+            "Europe",
+            "North America",
+            "Oceania",
+            "South America",
+    };
     private static Country[] countries;
 
     public static void start() {
@@ -16,6 +26,14 @@ public class WorldGame {
 
 
         //startNewGame();
+
+        startProGame();
+    }
+
+    private static void startProGame() {
+        System.out.println("◍ ◍ ◍ ◍ ◍ New Pro Game Started ◍ ◍ ◍ ◍ ◍");
+
+
     }
 
     private static void startNewGame() {

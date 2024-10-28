@@ -5,9 +5,11 @@
 inputData function:
 Generate 10 different countries -> add to array;
 
-printDataFunction:
+build game logic:
 
-1. Israel - 10000000
-2. USA - 300000000
-3. ...
+"is __Country_name__ in __Continent__? (1, 0)"
+
+the continent randomly from the __CONTINENTS__ Array
+
+Game over. Score: 8/10
 
