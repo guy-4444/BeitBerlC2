@@ -10,7 +10,7 @@ public class InputApp {
 
     public static void start() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("◍ ◍ ◍ ◍ ◍ World Game App ◍ ◍ ◍ ◍ ◍");
+        System.out.println("◍ ◍ ◍ ◍ ◍ Welcome to World Game App ◍ ◍ ◍ ◍ ◍");
 
 
         Country c1 = new Country();
