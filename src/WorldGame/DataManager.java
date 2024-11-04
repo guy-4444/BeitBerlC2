@@ -221,6 +221,8 @@ public class DataManager {
         countries.add(new Country("Yemen", "Asia", "Sana'a", 527_968, 34_000_000, false, 0.54, "﷼", "Yemeni Rial"));
         countries.add(new Country("Zambia", "Africa", "Lusaka", 752_612, 20_000_000, false, 0.51, "ZK", "Zambian Kwacha"));
         countries.add(new Country("Zimbabwe", "Africa", "Harare", 390_757, 19_000_000, false, 0.52, "$", "Zimbabwean Dollar"));
+        countries.add(new Country("aa", "Africa", "Harare", 390_757, 10_000_000, false, 0.8, "A", "aa"));
+        countries.add(new Country("bb", "Africa", "Harare", 390_757, 15_000_000, false, 0.2, "A", "aa"));
 
         return countries;
     }

@@ -12,7 +12,6 @@ public class WorldPedia {
         System.out.println("◍ ◍ ◍ ◍ ◍ Welcome to World-Pedia App ◍ ◍ ◍ ◍ ◍");
 
         countries = DataManager.generateCountriesDataArrayList();
-
         for (Country country : countries) {
             countriesMap.put(country.getName(), country);
         }

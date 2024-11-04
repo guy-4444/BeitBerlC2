@@ -2,14 +2,21 @@
 
 ### HomeWork:
 
-inputData function:
-Generate 10 different countries -> add to array;
 
 build game logic:
 
-"is __Country_name__ in __Continent__? (1, 0)"
+"enter two countries? (1, 0)"
 
-the continent randomly from the __CONTINENTS__ Array
+function a:
+איפה יש יותר בוגרים.
+
+function b:
+get country name, price
+
+calculate("Israel", 100)
+350 ש״ח
+
+
 
 Game over. Score: 8/10
 
