@@ -1,11 +1,10 @@
-import WorldGame.InputApp;
-import WorldGame.WorldGame;
+import WorldGame.WorldPedia;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        WorldGame.start();
+        WorldPedia.start();
 
 
 
