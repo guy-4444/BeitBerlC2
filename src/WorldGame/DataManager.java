@@ -1,6 +1,7 @@
 package WorldGame;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DataManager {
 
@@ -225,6 +226,22 @@ public class DataManager {
         countries.add(new Country("bb", "Africa", "Harare", 390_757, 15_000_000, false, 0.2, "A", "aa"));
 
         return countries;
+    }
+
+    public static HashMap<String, Double> generateCurrencies() {
+        HashMap<String, Double> map = new HashMap<>();
+
+        map.put("$", 1.00);
+        map.put("₼", 1.70);
+        map.put("₺", 34.33);
+        map.put("₪", 3.72);
+        map.put("₽", 98.00);
+        map.put("£", 0.77);
+        map.put("¥", 153.71);
+        map.put("€", 0.93);
+        map.put("₹", 84.39);
+
+        return map;
     }
 
 }
