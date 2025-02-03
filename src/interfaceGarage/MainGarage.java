@@ -6,7 +6,24 @@ public class MainGarage {
 
     private static GarageDB garageDB;
 
+
+    public static class MyException extends RuntimeException {
+        public MyException(String message) {
+            super(message);
+        }
+    }
+
+    public static void foo(String name) {
+        if (name == null) {
+            throw new MyException("");
+        }
+    }
+
+
     public static void start() {
+        foo("");
+
+
         garageDB = new GarageDB();
 
         garageDB.addVehicle(new Motorcycle("Yamaha"));

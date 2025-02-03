@@ -7,6 +7,7 @@ import heritage.HeritageMain;
 import interfaceGarage.MainGarage;
 import site.SiteMain;
 import stepDetector.MainScreen;
+import ticTacToe.TicTacToeMain;
 import zoo.ZooMain;
 
 import java.util.HashMap;
@@ -14,7 +15,7 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) {
-        MainGarage.start();
+        TicTacToeMain.start();
     }
 
 }
